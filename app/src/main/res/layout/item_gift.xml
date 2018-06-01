@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="@dimen/dm010"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm015"
+            android:text="乳酸饮料"
+            android:textColor="@color/comm_black"
+            android:textSize="@dimen/dm022"
+            />
+
+        <TextView
+            android:id="@+id/tv_smell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm015"
+            android:text="草莓味"
+            android:textColor="@color/comm_black"
+            android:textSize="@dimen/dm022"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm010"
+            android:text="奶嘴型"
+            android:textColor="@color/comm_black"
+            android:textSize="@dimen/dm022"
+            />
+
+
+        <TextView
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm015"
+            android:text="10瓶"
+            android:textColor="@color/comm_black"
+            android:textSize="@dimen/dm022"
+            />
+
+    </LinearLayout>
+</LinearLayout>

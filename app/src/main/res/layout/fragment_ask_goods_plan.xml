@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/comm_title_bar"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:background="@color/comm_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/comm_no_data"></include>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/ptr_ask_plan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null">
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/modifier_pwd_divier"
+              android:padding="@dimen/dm010"
+              android:orientation="horizontal">
+
+    <TextView
+        android:textSize="@dimen/dm028"
+        android:textColor="@color/goods_area"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_jxs_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="王二"
+        />
+</LinearLayout>

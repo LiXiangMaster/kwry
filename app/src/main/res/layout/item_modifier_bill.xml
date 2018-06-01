@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm200"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dm025"
+        >
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="@dimen/dm100"
+            android:layout_height="@dimen/dm100"
+            android:src="@drawable/logo"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm020"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_drink_taste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="奶嘴型"
+                    android:textColor="@color/comm_black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_drink_smell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:text="草莓味"
+                    android:textColor="@color/comm_black"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="规格："
+                    android:textColor="@color/modifier_bill_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_product_norms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100MLX12"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥59"
+                    android:textColor="@color/goods_num"
+                    android:textSize="@dimen/dm030"
+                    />
+                <include layout="@layout/model_count_view" ></include>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+
+    <include layout="@layout/comm_title_bar_three"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <hwd.kuworuye.weight.JustifyTextView
+                android:id="@+id/main_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#333e3e3e"
+                android:paddingBottom="@dimen/dm030"
+                android:paddingLeft="@dimen/dm030"
+                android:paddingRight="@dimen/dm030"
+                android:textColor="@color/comm_black"
+                android:textSize="@dimen/dm028"
+                android:textStyle="normal"
+                android:typeface="serif"
+                custom:lineSpacing="@dimen/dm030"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

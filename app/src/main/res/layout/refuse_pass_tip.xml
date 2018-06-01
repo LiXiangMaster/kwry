@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/refuse_tip_bg_shape"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm120"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="@dimen/dm060"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/comm_title_bar">
+        </View>
+
+        <View
+            android:layout_width="@dimen/dm003"
+            android:layout_height="@dimen/dm003"
+            android:layout_marginLeft="@dimen/dm010"
+            android:background="@color/comm_title_bar">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_marginRight="@dimen/dm030"
+            android:text="@string/refuse_pass_tip"
+            android:textColor="@color/comm_title_bar"
+            android:textSize="@dimen/dm030"
+            />
+
+        <View
+            android:layout_width="@dimen/dm003"
+            android:layout_height="@dimen/dm003"
+            android:layout_marginRight="@dimen/dm010"
+            android:background="@color/comm_title_bar">
+        </View>
+
+
+        <View
+            android:layout_width="@dimen/dm060"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/comm_title_bar">
+        </View>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:background="@color/refuse_pass">
+
+        <EditText
+            android:textColorHint="@color/goods_area"
+            android:id="@+id/et_refuse_reason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="请填写拒绝原因"
+            android:padding="@dimen/dm015"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm080"
+        android:layout_marginLeft="@dimen/dm030"
+        android:layout_marginRight="@dimen/dm030"
+        >
+
+        <TextView
+            android:id="@+id/tv_refuse_pass_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tip_comm_shape"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/goods_area"
+            />
+
+        <TextView
+            android:id="@+id/tv_refuse_pass_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tip_comm_shape"
+            android:gravity="center"
+            android:text="@string/confirm"/>
+    </RelativeLayout>
+</LinearLayout>

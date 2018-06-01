@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm090"
+        android:background="@color/comm_title_bar"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dm045"
+            android:layout_height="@dimen/dm045"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm020"
+            android:layout_marginTop="@dimen/dm020"
+            android:scaleType="centerInside"
+            android:src="@drawable/back"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_sale_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dm020"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_left"
+                android:layout_width="@dimen/dm160"
+                android:layout_height="@dimen/dm060"
+                android:background="@drawable/rb_title_sale_left_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/activity_apply_for"
+                android:textColor="@color/rb_text_title"
+                android:textSize="@dimen/dm025"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_right"
+                android:layout_width="@dimen/dm160"
+                android:layout_height="@dimen/dm060"
+                android:background="@drawable/rb_title_sale_right_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/activity_check"
+                android:textColor="@color/rb_text_title"
+                android:textSize="@dimen/dm025"
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/comm_white"/>
+
+</LinearLayout>

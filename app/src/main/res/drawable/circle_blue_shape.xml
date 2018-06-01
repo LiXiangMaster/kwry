@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <size android:height="@dimen/dm030" android:width="@dimen/dm030"></size>
+    <solid android:color="@color/comm_title_bar"></solid>
+
+</shape>

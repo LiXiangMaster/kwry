@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dm025">
+
+            <TextView
+                android:id="@+id/tv_order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm040"
+                android:text="@string/oder_time_text"
+                android:textColor="@color/oder_send_time"
+                android:textSize="@dimen/dm026"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_time_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm005"
+                android:layout_toRightOf="@+id/tv_order_time"
+                android:text="2017-02-24 14:20"
+                android:textColor="@color/oder_send_time"
+                />
+
+            <TextView
+                android:id="@+id/tv_product_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dm010"
+                android:text="商品已经发货了"
+                android:textColor="@color/oder_send_state"
+                android:textSize="@dimen/dm026"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_marginLeft="@dimen/dm045"
+            android:background="@color/oder_list_divider">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm030"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dm080"
+                android:layout_height="@dimen/dm080"
+                android:layout_marginLeft="@dimen/dm035"
+                android:src="@drawable/itemlogo"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm040"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_product_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_store_name"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dm010"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_item_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_num"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:text="合计："
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30000.00"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/rude_line">
+        </View>
+
+    </LinearLayout>
+</LinearLayout>

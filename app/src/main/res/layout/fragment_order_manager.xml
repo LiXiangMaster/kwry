@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/oder_manager_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/comm_title_bar_two_ac"></include>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mci_order_manager"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_order_manager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm000"
+        android:layout_marginTop="@dimen/dm010"
+        android:layout_weight="1"
+        android:background="@color/comm_white"/>
+
+    <Button
+        android:id="@+id/start_down_bill"
+        style="@style/Button"
+        android:layout_marginBottom="@dimen/dm015"
+        android:text="@string/bt_down_bill"
+        />
+</LinearLayout>

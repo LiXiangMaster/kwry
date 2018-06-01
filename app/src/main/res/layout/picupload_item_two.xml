@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rl_site_pic_update"
+              android:layout_width="@dimen/dm150"
+              android:layout_height="@dimen/dm150"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="@dimen/dm020"
+              android:background="@color/list_divider_bg"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="@dimen/dm010">
+
+
+    <ImageView
+        android:layout_width="@dimen/dm050"
+        android:layout_height="@dimen/dm050"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/camera"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm010"
+        android:text="照片"
+        android:textColor="@color/goods_area"
+        android:textSize="@dimen/dm028"
+        />
+
+</LinearLayout>

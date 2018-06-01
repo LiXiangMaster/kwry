@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm025"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <TextView
+                android:id="@+id/tv_choose_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="2016-12"
+                android:textColor="@color/goods_area"
+                android:textSize="@dimen/dm028"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm025"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_moth"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_choose_second_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dm005"
+                >
+
+                <TextView
+                    android:id="@+id/tv_submit_repertory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="第一周"
+                    android:textColor="@color/comm_title_bar"
+                    android:textSize="@dimen/dm028"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            style="@style/fine_line"></View>
+
+        <hwd.kuworuye.weight.MyListView
+            android:id="@+id/prl_submit_repertory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000"
+            android:layout_weight="1">
+        </hwd.kuworuye.weight.MyListView>
+
+        <Button
+            android:id="@+id/bt_submit_repertory"
+            style="@style/Button"
+            android:layout_marginBottom="@dimen/dm020"
+            android:text="提交"/>
+    </LinearLayout>
+</ScrollView>

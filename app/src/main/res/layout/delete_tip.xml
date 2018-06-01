@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/comm_tip_bg_shape"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/comm_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dm100"
+        android:text="@string/delete_tip"
+        android:textSize="@dimen/dm030"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm030"
+        android:layout_marginRight="@dimen/dm030"
+        android:layout_marginTop="@dimen/dm150">
+
+        <TextView
+            android:id="@+id/tv_delete_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tip_comm_shape"
+            android:gravity="center"
+            android:text="@string/cancel"
+            />
+
+        <TextView
+            android:id="@+id/tv_delete_confirm"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tip_comm_shape"
+            android:text="@string/confirm"
+            />
+    </RelativeLayout>
+</LinearLayout>

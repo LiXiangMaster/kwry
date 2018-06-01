@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+     <RelativeLayout
+       android:background="@color/comm_white"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dm150"
+       android:gravity="center_vertical"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:layout_marginLeft="@dimen/dm015"
+           android:layout_centerVertical="true"
+           android:id="@+id/tv_month_num"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/target_month_join_shape"
+           android:gravity="center"
+           android:text="一月"
+           android:textColor="@color/comm_white"
+           android:textSize="@dimen/dm018"
+           />
+
+       <LinearLayout
+           android:layout_centerVertical="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/dm030"
+           android:layout_toRightOf="@+id/tv_month_num"
+           android:orientation="vertical"
+           >
+
+           <TextView
+               android:id="@+id/tv_target_back_money"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/target_money"
+               />
+
+           <TextView
+               android:id="@+id/tv_really_back_money"
+               android:textColor="@color/comm_title_bar"
+               android:layout_marginTop="@dimen/dm010"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/really_money"
+               />
+
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/tv_precent"
+           android:layout_marginRight="@dimen/dm020"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="100%"
+           />
+   </RelativeLayout>
+    <View
+        android:background="@color/list_divider_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm015">
+
+    </View>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <hwd.kuworuye.weight.HackyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    </hwd.kuworuye.weight.HackyViewPager>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dm050"
+        android:layout_height="@dimen/dm050"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm020"
+        android:src="@drawable/close"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dm060"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文字酷我乳业： 有一种文化叫“成就”酷我儿童乳饮料携手中央电视二胎时代，酷我乳品的梦想和责任"
+            android:textColor="@color/comm_white"
+            android:textSize="@dimen/dm025"/>
+    </LinearLayout>
+
+</RelativeLayout>

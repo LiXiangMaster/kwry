@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <include layout="@layout/comm_title_bar_two"></include>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_order_sort_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabTextColor="@color/gray"
+        app:tabSelectedTextColor="@color/comm_title_bar"
+        app:tabIndicatorColor="@color/comm_title_bar"
+
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/vp_order_manager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm000"/>
+    <Button
+        android:textColor="@color/comm_white"
+        android:background="@color/comm_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_down_bill"
+        />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_divider_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm400"
+        android:background="@color/comm_title_bar">
+
+        <hwd.kuworuye.weight.RoundProgressBar
+            android:id="@+id/rpb_target_done_progress"
+            android:layout_width="@dimen/dm200"
+            android:layout_height="@dimen/dm200"
+            android:layout_centerInParent="true"
+            android_custom:roundColor="@color/round_progress_bg"
+            android_custom:roundProgressColor="@color/progress_color"
+            android_custom:roundWidth="10dip"
+            android_custom:textColor="@color/comm_white"
+            android_custom:textSize="@dimen/dm036"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dm030"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dm050"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/target_return_money"
+                    android:textColor="@color/comm_white"
+                    android:textSize="@dimen/dm026"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_target_back_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80万"
+                    android:textColor="@color/comm_white"
+                    android:textSize="@dimen/dm026"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/dm010"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/really_get_money"
+                    android:textColor="@color/comm_white"
+                    android:textSize="@dimen/dm026"
+                    android:id="@+id/textView4"/>
+
+                <TextView
+                    android:id="@+id/tv_really_back_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60万"
+                    android:textColor="@color/comm_white"
+                    android:textSize="@dimen/dm026"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_target_done"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none">
+
+    </ListView>
+
+</LinearLayout>

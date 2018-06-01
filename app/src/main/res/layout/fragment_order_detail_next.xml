@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hwd.kuworuye.weight.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <FrameLayout
+                android:id="@+id/fl_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <hwd.kuworuye.weight.MyListView
+                    android:id="@+id/lv_order_detail_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                </hwd.kuworuye.weight.MyListView>
+
+                <include layout="@layout/comm_no_data"></include>
+            </FrameLayout>
+
+            <View
+                style="@style/fine_line"
+                android:layout_below="@id/fl_item_list"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm010"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_marginTop="@dimen/dm010"
+                    android:layout_width="@dimen/dm060"
+                    android:layout_height="@dimen/dm030"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:src="@drawable/gift"/>
+
+                <hwd.kuworuye.weight.MyListView
+                    android:id="@+id/lv_gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:scrollbars="none">
+
+                </hwd.kuworuye.weight.MyListView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_line1"
+                style="@style/fine_line"
+                android:layout_below="@id/fl_item_list"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_product_num_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:layout_below="@id/v_line1"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dm010"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dm010"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_product_total_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:text="共25件商品"
+                        android:textColor="@color/comm_black"
+                        android:textSize="@dimen/dm028"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_all_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="合计：¥1475.00"
+                        android:textColor="@color/comm_black"
+                        android:textSize="@dimen/dm028"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_line2"
+                style="@style/rude_line"
+                android:layout_below="@id/rl_product_num_price"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/v_line2"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_approve_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm080">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:text="@string/approve_message"
+                            android:textColor="@color/comm_black"
+                            android:textSize="@dimen/dm030"
+                            />
+
+                        <View
+                            style="@style/fine_line"
+                            android:layout_alignParentBottom="true">
+                        </View>
+                    </RelativeLayout>
+
+                    <hwd.kuworuye.weight.MyListView
+                        android:id="@+id/ml_order_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </hwd.kuworuye.weight.MyListView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/rude_line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm080">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:text="@string/order_message"
+                            android:textColor="@color/comm_black"
+                            android:textSize="@dimen/dm030"
+                            />
+
+                        <View
+                            style="@style/fine_line"
+                            android:layout_alignParentBottom="true">
+
+                        </View>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm020"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_number"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_order_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm020"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/submit_time"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tv_submit_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm020"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_from"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_order_memo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm020"
+                            android:text=""
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm020"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/get_goods_area"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv_getadress_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/me_title_one"
+                                    android:textSize="@dimen/dm028"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_getadress_phone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dm010"
+                                    android:text=""
+                                    android:textColor="@color/me_title_one"
+                                    android:textSize="@dimen/dm028"
+                                    />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_getgoods_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/me_title_one"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_refuse_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dm030"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拒绝理由："
+                    android:textSize="@dimen/dm028"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_refuse_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/dm028"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                style="@style/rude_line"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_delivery_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm030"
+                        android:text="@string/dispatch_info"
+                        android:textColor="@color/comm_black"
+                        android:textSize="@dimen/dm030"
+                        />
+
+                    <View
+                        style="@style/fine_line"
+                        android:layout_alignParentBottom="true">
+
+                    </View>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dm020"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deliver_goods"
+                        android:textSize="@dimen/dm028"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_driver_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张师傅，"
+                        android:textSize="@dimen/dm028"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_driver_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm010"
+                        android:text="13071275009"
+                        android:textColor="@color/comm_title_bar"
+                        android:textSize="@dimen/dm028"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dm010"
+            android:layout_marginTop="@dimen/dm020">
+
+            <LinearLayout
+                android:id="@+id/ll_refuse_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/bt_refuse"
+                    style="@style/Small_Red_Button"
+                    android:text="@string/turn_down"
+                    />
+
+                <Button
+                    android:id="@+id/bt_pass"
+                    style="@style/Small_Blue_Button"
+                    android:text="@string/pass"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_confirm_take_goods"
+                style="@style/Button"
+                android:text=""/>
+        </FrameLayout>
+
+    </LinearLayout>
+</hwd.kuworuye.weight.MyScrollView>

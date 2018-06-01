@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/list_divider_bg"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_approve_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/comm_white"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dm020">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/approve_message"
+                        android:textColor="@color/comm_black"
+                        android:textSize="@dimen/dm030"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/fine_line"></View>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/comm_no_data"></include>
+
+                    <hwd.kuworuye.weight.MyListView
+                        android:id="@+id/mlv_approve_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </hwd.kuworuye.weight.MyListView>
+                </FrameLayout>
+
+
+                <View
+                    style="@style/fine_line"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_refuse_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dm030"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拒绝理由："
+                        android:textSize="@dimen/dm028"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_refuse_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/dm028"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:background="@color/comm_white"
+                    android:orientation="vertical"
+                    >
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/activity_name"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+                            <TextView
+                                android:id="@+id/tv_activity_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/activity_goal"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+                            <TextView
+                                android:id="@+id/tv_activity_goal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/product_file"
+                            android:textColor="@color/comm_black"
+                            android:textSize="@dimen/dm030"
+                            />
+
+                    </LinearLayout>
+
+                    <hwd.kuworuye.weight.MyListView
+                        android:id="@+id/myl_product_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </hwd.kuworuye.weight.MyListView>
+
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/execute_city"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+                            <TextView
+                                android:id="@+id/tv_execute_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/execute_ranges"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+                            <TextView
+                                android:id="@+id/tv_execute_range"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/execute_time"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+                            <TextView
+                                android:id="@+id/tv_execute_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/content"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+
+                            <TextView
+                                android:id="@+id/tv_content_shape"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/material"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+
+                            <TextView
+                                android:id="@+id/tv_xiaohe_material"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/rate"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+
+                            <TextView
+                                android:id="@+id/tv_xiaohe_bilv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sale_room"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+
+                            <TextView
+                                android:id="@+id/tv_sale_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="期间销售额"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_ac_sale_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dm015"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="期间费效比率"
+                            android:textColor="@color/me_title_one"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010">
+
+                            <TextView
+                                android:id="@+id/tv_ac_bilv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/comm_title_bar"
+                                android:textSize="@dimen/dm028"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/fine_short_line">
+                    </View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_activity_site_pic_manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:background="@color/comm_white"
+                        android:padding="@dimen/dm020">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="活动现场照片"
+                            android:textColor="@color/comm_black"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm020"
+                            android:src="@drawable/next"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/fine_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm236"
+                        android:background="@color/comm_white"
+                        android:padding="@dimen/dm010">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <include
+                                android:id="@+id/rl_ac_site_place"
+                                layout="@layout/comm_addpic_place"></include>
+
+                            <hwd.kuworuye.weight.MyGridView
+                                android:id="@+id/mgv_activity_site"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:horizontalSpacing="@dimen/dm010"
+                                android:numColumns="3">
+
+                            </hwd.kuworuye.weight.MyGridView>
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_ticket_manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:background="@color/comm_white"
+                        android:padding="@dimen/dm020">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="票据照片"
+                            android:textColor="@color/comm_black"
+                            android:textSize="@dimen/dm028"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm020"
+                            android:src="@drawable/next"
+                            />
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/fine_line">
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm236"
+                        android:background="@color/comm_white"
+                        android:padding="@dimen/dm010">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dm236"
+                            android:background="@color/comm_white"
+                            android:padding="@dimen/dm010">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <include
+                                    android:id="@+id/rl_ac_ticket_place"
+                                    layout="@layout/comm_addpic_place"></include>
+
+                                <hwd.kuworuye.weight.MyGridView
+                                    android:id="@+id/mgv_ticket_manage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:horizontalSpacing="@dimen/dm010"
+                                    android:numColumns="3">
+
+                                </hwd.kuworuye.weight.MyGridView>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm160"
+            android:layout_alignParentBottom="true"
+            android:background="@color/list_divider_bg">
+
+            <Button
+                android:id="@+id/bt_sale_hexiao_submit"
+                style="@style/Button"
+                android:layout_marginBottom="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm050"
+                android:text="@string/submit"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_refuse_pass_xiaohe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/bt_xiaohe_refuse"
+                    style="@style/Small_Red_Button"
+                    android:text="@string/turn_down"
+                    />
+
+                <Button
+                    android:id="@+id/bt_xiaohe_pass"
+                    style="@style/Small_Blue_Button"
+                    android:text="@string/pass"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm110"
+    android:background="@color/list_divider_bg">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm090"
+        android:layout_gravity="bottom"
+        android:background="@color/comm_white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dm150"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="合计:"
+                        android:textColor="@color/comm_black"
+                        android:textSize="@dimen/dm030"
+                        />
+                    <TextView
+                        android:textColor="@color/order_modifier_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥"
+                        android:textSize="@dimen/dm030"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_bottom_total_price"
+                        android:layout_marginLeft="@dimen/dm010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/order_modifier_text"
+                        android:textSize="@dimen/dm032"
+
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv__bottom_total_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:text="共0件商品"
+                    android:textColor="@color/me_title_one"
+                    android:textSize="@dimen/dm020"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_bottom_com"
+                android:layout_width="@dimen/dm229"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/comm_title_bar"
+                android:text="@string/order_close"
+                android:textColor="@color/comm_white"
+                android:textSize="@dimen/dm030"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dm090"
+        android:layout_height="@dimen/dm090"
+        android:layout_marginBottom="@dimen/dm050"
+        android:layout_marginLeft="@dimen/dm020"
+        android:src="@drawable/shop_car"
+        />
+</FrameLayout>

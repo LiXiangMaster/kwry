@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/comm_no_data"></include>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/mg_pic_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="@dimen/dm010"
+        android:numColumns="3">
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+    <Button
+        android:id="@+id/add_pic"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm080"
+        android:text="@string/add_pic"/>
+</RelativeLayout>

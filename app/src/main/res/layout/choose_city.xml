@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/lv_choose_city"
+        android:layout_width="@dimen/dm200"
+        android:layout_height="wrap_content"
+        android:background="@color/comm_white">
+    </ListView>
+
+</LinearLayout>

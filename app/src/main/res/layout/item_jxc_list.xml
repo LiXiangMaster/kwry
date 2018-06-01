@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_jxc_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/comm_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm010"
+            >
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/iv_jxdetail_pic"
+                android:layout_width="@dimen/dm170"
+                android:layout_height="@dimen/dm170"
+                android:src="@drawable/temp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm020"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm000"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_drink_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="奶嘴型"
+                        android:textColor="@color/comm_black"
+                        android:textSize="@dimen/dm030"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_drink_smell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm040"
+                        android:text="草莓味"
+                        android:textColor="@color/comm_black"
+                        android:textSize="@dimen/dm030"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_drink_norms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dm000"
+                    android:layout_weight="1"
+                    android:text="规格：100MLX12"
+                    android:textColor="@color/goods_area"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_drink_box_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dm000"
+                    android:layout_weight="1"
+                    android:text="100箱"
+                    android:textColor="@color/goods_num"
+                    android:textSize="@dimen/dm030"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line"
+            android:layout_below="@+id/ll_jxc_list"></View>
+    </RelativeLayout>
+</LinearLayout>

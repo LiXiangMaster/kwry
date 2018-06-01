@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm000"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm030"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gist"
+                android:textColor="@color/goods_area"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:textSize="@dimen/dm028"
+                android:textColor="@color/comm_title_bar"
+                android:id="@+id/et_purport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/fine_short_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm030"
+                android:text="@string/explain"
+                android:textColor="@color/goods_area"
+                android:textSize="@dimen/dm028"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dm560"
+            android:layout_height="@dimen/dm256"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dm020"
+            android:background="@color/list_divider_bg">
+
+            <EditText
+                android:textColor="@color/comm_title_bar"
+                android:textColorHint="@color/goods_area"
+                android:id="@+id/et_explain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="@string/et_other_cost_hint"
+                android:padding="@dimen/dm015"
+                android:textSize="@dimen/dm028"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm030"
+            >
+
+            <TextView
+                android:textSize="@dimen/dm028"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm010"
+                android:text="@string/cost"
+                android:textColor="@color/goods_area"
+                />
+
+            <EditText
+                android:digits="0123456789."
+                android:textSize="@dimen/dm028"
+                android:textColor="@color/comm_title_bar"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:id="@+id/et_cost"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                />
+            <TextView
+                android:textSize="@dimen/dm028"
+                android:textColor="@color/comm_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/fine_short_line">
+        </View>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_other_cost_submit"
+        style="@style/Button"
+        android:layout_marginBottom="@dimen/dm020"
+        android:text="@string/submit"
+        />
+</LinearLayout>

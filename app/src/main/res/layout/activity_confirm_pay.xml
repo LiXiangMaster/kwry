@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_divider_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:padding="@dimen/dm010"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm090"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/comm_title_bar"
+        >
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/iv_activity_back"
+            android:layout_marginLeft="@dimen/dm005"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dm080"
+            android:layout_height="@dimen/dm080"
+            android:src="@drawable/back"
+            />
+        <TextView
+            android:textSize="@dimen/dm030"
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_comm_title_bar_three"
+            android:textColor="@color/comm_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_pay"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dm590"
+        android:layout_height="@dimen/dm360"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dm050"
+        android:background="@color/comm_white"
+        >
+        <ImageView
+            android:id="@+id/iv_loading_camera"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dm080"
+            android:layout_height="@dimen/dm090"
+            android:src="@drawable/camera"
+            />
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:textColor="@color/submit_photo"
+            android:textSize="@dimen/dm028"
+            android:layout_below="@+id/iv_loading_camera"
+            android:layout_marginTop="@dimen/dm030"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_info"
+            />
+        <ImageView
+            android:id="@+id/iv_show_pay"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dm250"
+            android:layout_height="@dimen/dm250"
+            android:src="@drawable/temp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/dm030"
+        android:text="@string/submit"
+        style="@style/Button"
+        android:id="@+id/bt_submit"
+        />
+
+</LinearLayout>

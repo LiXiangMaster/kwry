@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mci_activity_xiaohe"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_activity_xiaohe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm000"
+        android:layout_marginTop="@dimen/dm010"
+        android:layout_weight="1"
+        android:background="@color/comm_white"/>
+
+    <Button
+        android:id="@+id/bt_apply_for_xiaohe"
+        style="@style/Button"
+        android:layout_marginBottom="@dimen/dm015"
+        android:text="@string/apply_for_activity"
+        />
+</LinearLayout>

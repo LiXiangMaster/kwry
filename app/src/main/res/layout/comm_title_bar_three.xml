@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm090"
+        android:background="@color/comm_title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dm010"
+        >
+
+        <ImageView
+            android:id="@+id/comm_three_back"
+            android:layout_width="@dimen/dm080"
+            android:layout_height="@dimen/dm080"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm005"
+            android:scaleType="centerInside"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:id="@+id/tv_comm_title_bar_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用三个的标题"
+            android:textColor="@color/comm_white"
+            android:textSize="@dimen/dm030"
+            />
+
+        <ImageView
+            android:id="@+id/comm_right_three"
+            android:layout_width="@dimen/dm048"
+            android:layout_height="@dimen/dm048"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dm020"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_iv"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

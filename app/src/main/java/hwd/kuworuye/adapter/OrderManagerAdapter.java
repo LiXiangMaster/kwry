@@ -1,0 +1,40 @@
+package hwd.kuworuye.adapter;
+
+import android.content.Context;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Administrator on 2017/3/4.
+ */
+public class OrderManagerAdapter extends FragmentPagerAdapter {
+    private  Context context;
+    private List<Fragment> fragmentList;
+    private  ArrayList<String> tableData;
+
+    public OrderManagerAdapter(Context context,FragmentManager fm, List<Fragment> fragmentList, ArrayList<String> tableData) {
+        super(fm);
+        this.context = context;
+        this.fragmentList = fragmentList;
+        this.tableData = tableData;
+
+    }
+
+    @Override
+    public int getCount() {
+        return fragmentList == null ? 0 : fragmentList.size();
+    }
+
+    @Override
+    public Fragment getItem(int position) {
+        return fragmentList.get(position);
+    }
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return tableData.get(position);
+    }
+}

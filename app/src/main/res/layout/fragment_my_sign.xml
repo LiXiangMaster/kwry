@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_divider_bg"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/dm550"
+        android:layout_height="@dimen/dm400"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dm050">
+
+        <ImageView
+            android:background="@color/comm_white"
+            android:id="@+id/iv_show_sign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+
+        <hwd.kuworuye.weight.LinePathView
+            android:id="@+id/lp_singn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/comm_white"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bt_sign_submit"
+        style="@style/Button"
+        android:layout_marginTop="@dimen/dm080"
+        android:text="@string/submit"/>
+
+</LinearLayout>

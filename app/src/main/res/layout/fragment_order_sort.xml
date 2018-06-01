@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/oder_manager_bg"
+              android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/plr_sort_page"
+        android:divider="@null"
+        android:layout_marginTop="@dimen/dm010"
+        android:background="@color/comm_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <include layout="@layout/comm_no_data"></include>
+</LinearLayout>

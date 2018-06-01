@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_divider_bg"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm000"
+        android:layout_weight="1">
+
+        <include layout="@layout/comm_no_data"></include>
+
+        <ListView
+            android:id="@+id/lv_area_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        </ListView>
+    </FrameLayout>
+
+    <View
+        style="@style/fine_line"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_add_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm090"
+        android:layout_marginBottom="@dimen/dm010"
+        android:background="@color/comm_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dm005"
+            android:text="+"
+            android:textColor="@color/comm_title_bar"
+            android:textSize="@dimen/dm045"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_area"
+            android:textColor="@color/comm_title_bar"
+            android:textSize="@dimen/dm030"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

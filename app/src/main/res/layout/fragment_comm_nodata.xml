@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5F5F5"
+    >
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dm180"
+            android:layout_height="@dimen/dm180"
+            android:src="@drawable/nonet"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm010"
+            android:text="@string/no_net_tip"
+            android:textColor="@color/goods_area"
+            />
+
+        <TextView
+            android:id="@+id/tv_agin_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm010"
+            android:background="@drawable/nonet_tv_normal_shape"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dm005"
+            android:text="@string/again_loading"
+            android:textColor="@color/comm_title_bar"
+            />
+    </LinearLayout>
+</RelativeLayout>

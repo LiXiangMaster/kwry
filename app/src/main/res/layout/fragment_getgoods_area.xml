@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/list_divider_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:background="@color/comm_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dm020"
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人"
+            android:textSize="@dimen/dm030"/>
+
+        <EditText
+            android:id="@+id/et_getgoods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm020"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/fine_short_line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:background="@color/comm_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dm020"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话"
+            android:textSize="@dimen/dm030"
+            />
+
+        <EditText
+            android:maxLength="11"
+            android:inputType="phone|number"
+            android:id="@+id/et_getgoods_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm010"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/fine_short_line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm200"
+        android:background="@color/comm_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dm010"
+
+        >
+
+        <TextView
+            android:layout_marginTop="@dimen/dm025"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm020"
+            android:text="所在区域"
+            android:textSize="@dimen/dm030"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_check_choose"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm000"
+                android:orientation="horizontal"
+                >
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_width="@dimen/dm030"
+                    android:layout_height="@dimen/dm030"
+                    android:src="@drawable/choose_area"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_getgoods_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:gravity="center_vertical"
+                    android:text="点击选择地址"
+                    android:textSize="@dimen/dm030"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:background="@color/list_divider_bg">
+            </View>
+
+            <EditText
+                android:textColorHint="@color/goods_area"
+                android:id="@+id/et_detail_adress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm000"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入详细地址"
+                android:textSize="@dimen/dm030"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/fine_short_line"></View>
+
+
+
+</LinearLayout>

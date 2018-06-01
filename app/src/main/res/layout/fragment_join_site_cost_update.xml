@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hwd.kuworuye.weight.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="超市名称"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:id="@+id/et_mark_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:maxLength="11"
+                android:inputType="phone|number"
+                android:id="@+id/et_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"/>
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="采购负责人"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:id="@+id/et_shopping_people"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门店数量"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:layout_weight="1"
+                android:id="@+id/et_store_num"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                />
+            <TextView
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="家"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="年经营额"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:digits="0123456789."
+                android:layout_weight="1"
+                android:id="@+id/et_year_manage"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:inputType="phone"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                />
+            <TextView
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万元"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同类品牌"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:id="@+id/et_same_brand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年销售额"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:digits="0123456789."
+                android:layout_weight="1"
+                android:id="@+id/et_year_sale"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:inputType="phone"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                />
+            <TextView
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万元"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/fine_line">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="费用总计"
+                android:textColor="@color/me_title_one"
+                android:textSize="@dimen/dm028"
+                />
+
+            <EditText
+                android:digits="0123456789."
+                android:layout_weight="1"
+                android:id="@+id/et_cost_total"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@null"
+                android:inputType="phone"
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                />
+            <TextView
+                android:textColor="@color/comm_title_bar"
+                android:textSize="@dimen/dm028"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/rude_line"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <View
+                style="@style/fine_line">
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rl_join_site_detail_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm020"
+                android:background="@color/comm_white"
+                android:padding="@dimen/dm020">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="进场明细照片管理"
+                    android:textColor="@color/comm_black"
+                    android:textSize="@dimen/dm028"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:src="@drawable/next"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/fine_line">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm236"
+                android:background="@color/comm_white"
+                android:padding="@dimen/dm010">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm236"
+                    android:background="@color/comm_white"
+                    android:padding="@dimen/dm010">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/comm_addpic_place" android:id="@+id/rl_join_place"></include>
+
+                        <hwd.kuworuye.weight.MyGridView
+                            android:id="@+id/mgv_join_site_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:horizontalSpacing="@dimen/dm010"
+                            android:numColumns="3">
+
+                        </hwd.kuworuye.weight.MyGridView>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_joinsite_submit"
+            style="@style/Button"
+            android:layout_marginBottom="@dimen/dm010"
+            android:layout_marginTop="@dimen/dm010"
+            android:text="确认修改"
+            />
+    </LinearLayout>
+</hwd.kuworuye.weight.MyScrollView>

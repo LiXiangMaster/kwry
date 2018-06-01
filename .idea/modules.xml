@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KuwoRuye.iml" filepath="$PROJECT_DIR$/KuwoRuye.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-arl/lib-arl.iml" filepath="$PROJECT_DIR$/lib-arl/lib-arl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listlibrary/listlibrary.iml" filepath="$PROJECT_DIR$/listlibrary/listlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magicindicator/magicindicator.iml" filepath="$PROJECT_DIR$/magicindicator/magicindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myfitlibrary/myfitlibrary.iml" filepath="$PROJECT_DIR$/myfitlibrary/myfitlibrary.iml" />
+    </modules>
+  </component>
+</project>
